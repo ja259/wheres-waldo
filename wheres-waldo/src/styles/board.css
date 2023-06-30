@@ -1,0 +1,62 @@
+#container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: -5;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    overflow: scroll;
+    border: 1px solid rgba(255, 255, 255, 0.123);
+    border-radius: 1em;
+    box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.541);
+    height: 605px;
+  }
+  
+  #check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.25s;
+    visibility: hidden;
+  }
+  
+  #check-text {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: rgb(255, 255, 255);
+    width: 10em;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1em;
+  }
+  
+  #check-mark {
+    color: rgb(0, 255, 136);
+    margin-right: 0.5em;
+  }
+  
+  #x-mark {
+    color: rgb(255, 0, 85);
+    margin-right: 0.5em;
+  }
