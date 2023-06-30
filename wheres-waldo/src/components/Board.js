@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import boardPhoto from '../assets/img/picture.jpg';
-import '../styles/photo.css';
+import '../styles/photos.css';
 import '../styles/board.css';
 import { auth, firestore, timestamp } from '../firebase';
 import Menu from './Menu';
